@@ -13,9 +13,9 @@ Bygget en liten widget for å konvertere mellom valutaer ved hjelp av kurser fra
 
 ## Kjøre lokalt 
 
-Du kan åpne index.html direkte i nettleseren, eller kjøre en lokal server hvis du foretrekker det. Jeg har brukt vscode live server og kan åpnes  på http://127.0.0.1:5500 hvis du velger det. 
+Du kan åpne index.html direkte i nettleseren, eller kjøre en lokal server hvis du foretrekker det. Jeg har brukt vscode live server og kan åpnes på http://127.0.0.1:5500 hvis du velger det. 
 
-## Filstruktur: 
+## Filstruktur 
 
 - index.html: Markup
 - style.css: Styling
@@ -33,9 +33,3 @@ et FEIL-konstantobjekt. UI oversetter koder til meldinger.
 Uventede feil logges separat til konsollen så det er noe å feilsøke fra.
 
 Detaljer og diskusjon av valg finnes i refleksjon.md.
-
-
-
-
-
-

@@ -4,7 +4,7 @@ Jeg valgte vanilla JS over React fordi oppgaven ikke belønner rammeverk. Det ga
 
 Frankfurter er CORS-aktivert og åpent, så en mellomlaget backend hadde bare duplisert async-håndtering. Jeg valgte v2 av API-et selv om v1 har innebygd konvertering, fordi v2 vedlikeholdes aktivt og det matcher at jeg henter valutalisten dynamisk fra /v2/currencies i stedet for å hardkode et utvalg. Default NOK til EUR siden brukstilfellet er norsk nettbutikk.
 
-Feilhåndtering
+## Feilhåndtering
 
 De vanligste feilene er nettverksfeil, problemer med API-et (nede eller tregt), at brukeren skriver inn noe rart, og at noe feiler ved oppstart. Det er nyttig å skille disse, fordi brukeren skal ha forskjellige meldinger for hvert tilfelle.
 
@@ -20,9 +20,8 @@ Jeg sjekket i DevTools for å se hva responsen faktisk inneholdt, og oppdaget at
 
 Underveis testet jeg å konvertere mellom XPD (palladium) og GMD (Gambian Dalasi).API-et returnerte 200 med tomt array fordi det ikke finnes kurs mellom disse valutaene. Den generelle "ugyldig respons"-meldingen var misvisende, så jeg la til en egen ingen kurs kode.
 
-# Videre utvikling
+## Videre utvikling
 
 Tester. Widgeten ville hatt godt av enhetstester med mockede fetch-svar. 
 
 Race condition-håndtering. Hvis bruker bytter valuta veldig raskt flere ganger, kan svar ankomme i annen rekkefølge enn de ble sendt og dermed vise feil resultat. 
-
