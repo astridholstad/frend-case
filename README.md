@@ -17,10 +17,10 @@ Du kan åpne index.html direkte i nettleseren, eller kjøre en lokal server hvis
 
 ## Filstruktur: 
 
-index.html: Markup
-style.css: Styling
-app.js: All JS-logikk: API-lag, UI-lag, hovedlogikk
-refleksjon.md
+- index.html: Markup
+- style.css: Styling
+- app.js: All JS-logikk: API-lag, UI-lag, hovedlogikk
+- refleksjon.md
 
 ## Tekniske valg
 
