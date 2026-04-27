@@ -94,7 +94,6 @@ async function hentKurs(fra, til) {
     const url = `${API_BASE}/rates?base=${encodeURIComponent(fra)}&quotes=${encodeURIComponent(til)}`;
     const data = await hentJson(url);
  
-    // Defekt respons fra API-et (skal ikke skje, men beskytt likevel).
     if (!Array.isArray(data)) {
         throw new ApiFeil(FEIL.UGYLDIG_RESPONS);
     }
